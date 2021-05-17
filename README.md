@@ -1,30 +1,25 @@
-██████╗  ██████╗  ██████╗ ███████╗    ██████╗  ██████╗ ████████╗
-██╔══██╗██╔═══██╗██╔════╝ ██╔════╝    ██╔══██╗██╔═══██╗╚══██╔══╝
-██║  ██║██║   ██║██║  ███╗█████╗      ██████╔╝██║   ██║   ██║
-██║  ██║██║   ██║██║   ██║██╔══╝      ██╔══██╗██║   ██║   ██║
-██████╔╝╚██████╔╝╚██████╔╝███████╗    ██████╔╝╚██████╔╝   ██║
-╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝    ╚═════╝  ╚═════╝    ╚═╝
- <▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬>
+# DOGE CLICK BOT
  
- 
-#Firstly Join The Bot.
+### Firstly Join The Bot.
 
 Appreciate Refferal: https://t.me/Dogecoin_click_bot?start=5W0B 
 
-#How to use (Windows) :
-1.Install Python From MS Store
-2.Download This Repo As Zip And Extract to Any Location
-3.Go to the extracted location and open Powershell there (Shift + Right Mouse Click)
-4.Run the following command :
- python -m pip install -r requirements.txt
-
-5. Wait till it completes installing all libs 
-6. Finally Run this (Where phone_number is your Telegram Account Number With Country Code)  : 
- python3 DOGE.py phone_number
+### How to use (Windows) :
+1.Install Python From MS Store <BR>
+2.Download This Repo As Zip And Extract to Any Location <br>
+3.Go to the extracted location and open Powershell there (Shift + Right Mouse Click)<br>
+4.Run the following command :<br><br>
+`python -m pip install -r requirements.txt`
+<br><br>
+5. Wait till it completes installing all libs <br>
+6. Finally Run this (Where phone_number is your Telegram Account Number With Country Code)  : <br><br>
+`python3 DOGE.py phone_number`
+ <br><br>
+Example:  `python3 DOGE.py +8801XXXXXXXXX`
  
- Example:  python3 DOGE.py +8801XXXXXXXXX
  
- 
- #Note :
- Links will open in default browser.(For Bypassing Cloudflare protection)
- Timer Wont work if you click outside the browser window. (As some ads depends on external timer)
+ ### Note :
+ -Links will open in default browser.(For Bypassing Cloudflare protection)
+ -Timer Wont work if you click outside the browser window. (As some ads depends on external timer)
+ -Not tried with any other platforms . Shoud technically work as long it has Python and a Browser
+ -Fill free to try for yourself
