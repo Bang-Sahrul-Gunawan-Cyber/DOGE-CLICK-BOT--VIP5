@@ -20,6 +20,7 @@ Example:  `python3 DOGE.py +8801XXXXXXXXX`
  
  ### Note :
  -Links will open in default browser.(For Bypassing Cloudflare protection)<br>
+ - It is recommended to clear tabs from time to time if too many are open for performance issues
  -Timer Wont work if you click outside the browser window. (As some ads depends on external timer)<br>
  -Not tried with any other platforms . Shoud technically work as long it has Python and a Browser<br>
- -Fill free to try for yourself<br>
+ -Feel free to try for yourself<br>
