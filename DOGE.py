@@ -13,7 +13,7 @@ try:
     from bs4 import BeautifulSoup
 except:
     print(
-        "\033[1;30m# \033[1;31mHmmm Sepertinya Modul Requests Dan Bs4 Belum Terinstall\n\033[1;30m# \033[1;31mTo install Please Type pip install requests and pip install bs4"
+        "\033[1;30m# \033[1;31mHmmm Looks like the Requests And Bs4 Module Is Not Installed\n\033[1;30m# \033[1;31mTo install Please Type pip install requests and pip install bs4"
     )
     sys.exit()
 
@@ -41,7 +41,7 @@ if not os.path.exists("session"):
 os.system("clear")
 print(banner)
 if len(sys.argv) < 2:
-    print("\033[1;33mMasukan Perintah: python DOGE.py +62")
+    print("\033[1;33mCommand Input: python DOGE.py +62")
     sys.exit(1)
 
 def tunggu(x):
@@ -71,7 +71,7 @@ client.connect()
 if not client.is_user_authorized():
     try:
         client.send_code_request(phone_number)
-        me = client.sign_in(phone_number, input("\n\n\n\033[1;33mMasukan Code OTP : "))
+        me = client.sign_in(phone_number, input("\n\n\n\033[1;33mType OTP : "))
     except SessionPasswordNeededError:
         passw = input("\033[1;0mYour 2fa Password : ")
         me = client.start(phone_number, passw)
@@ -79,12 +79,12 @@ myself = client.get_me()
 os.system("clear")
 print(banner)
 print(
-    "\033[1;32mSelamat Datang Di Bot DOGE Pro",
+    "\033[1;32mWelcome to the DOGE Pro Bot",
     myself.first_name,
-    "\n\033[1;32mTools Ini Di Gunakan Untuk Menuyul DOGE Click Bot",
+    "\n\033[1;32mThese Tools Are Used To Automate DOGE Click Bot",
 )
 
-print("\n\n\033[1;37mTarik Ses Tuyul Sedang Berkerja......!")
+print("\n\n\033[1;37mBot Is Starting......!")
 try:
     channel_entity = client.get_entity("@Dogecoin_click_bot")
     channel_username = "@Dogecoin_click_bot"
@@ -94,7 +94,7 @@ try:
             "                                                              "
         )
         sys.stdout.write("\r")
-        sys.stdout.write("\033[1;30m# \033[1;33mSedang Mencoba Url Visit")
+        sys.stdout.write("\033[1;30m# \033[1;33mTrying to Visit Url")
         sys.stdout.flush()
         client.send_message(entity=channel_entity, message="🖥 Visit sites")
         sleep(3)
@@ -114,7 +114,7 @@ try:
             posts.messages[0].message.find("Sorry, there are no new ads available")
             != -1
         ):
-            print("\n\033[1;30m# \033[1;31mIklan Sudah Habis Coba Lagi Besok\n")
+            print("\n\033[1;30m# \033[1;31mAds are Out. Try Again Later\n")
             client.send_message(entity=channel_entity, message="💰 Balance")
             sleep(5)
             posts = client(
@@ -201,7 +201,7 @@ try:
                         sys.stdout.write(
                             "\r\033[1;30m# \033[1;32mYou earned "
                             + js["reward"]
-                            + " LTC for visiting a site!\n"
+                            + " DOGE for visiting a site!\n"
                         )
                 else:
                     sys.stdout.write("\r")
