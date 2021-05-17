@@ -85,7 +85,7 @@ print(
     "\n\033[1;32mThese Tools Are Used To Automate DOGE Click Bot",
 )
 
-print("\n\n\033[1;37mBot Is Starting......!")
+print("\n\n\033[1;37mBot Is Running......!")
 try:
     channel_entity = client.get_entity("@Dogecoin_click_bot")
     channel_username = "@Dogecoin_click_bot"
