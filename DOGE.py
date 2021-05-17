@@ -10,6 +10,7 @@ import json, re, sys, os
 
 try:
     import requests
+    import webbrowser
     from bs4 import BeautifulSoup
 except:
     print(
@@ -139,7 +140,10 @@ try:
                 sys.stdout.write("\033[1;32m• \033[1;33mVisit " + url)
                 sys.stdout.flush()
                 id = posts.messages[0].id
-                r = c.get(url, headers=ua, timeout=15, allow_redirects=True)
+                webbrowser.open(url)
+
+                #r = c.get(url, headers=ua, timeout=15, allow_redirects=True)
+
                 soup = BeautifulSoup(r.content, "html.parser")
                 if (
                     soup.find("div", class_="g-recaptcha") is None
