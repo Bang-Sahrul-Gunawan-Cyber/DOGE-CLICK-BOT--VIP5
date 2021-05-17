@@ -1,1 +1,2 @@
-# DOGE-CLICK-BOT--VIP5
+This bot is dead 
+Reason : Cloudflare Protection
